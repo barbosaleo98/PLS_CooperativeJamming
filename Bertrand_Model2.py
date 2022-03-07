@@ -1,9 +1,8 @@
 # Script que produz uma demonstração gráfica do Modelo 2 do Paradoxo de Bertrand
 # Utilizado para produzir ruas através de um PLP em uma área circular para redes V2X
 
-import numpy as np;  # Pacote NumPy para vetores, gerador de números aleatórios, etc
-import matplotlib.pyplot as plt  # para plotagem
-from matplotlib import collections  as mc  # para plotar segmentos de linhas
+import numpy as np; 
+import matplotlib.pyplot as plt  
 
 # Dimensões do disco
 x0 = 0;  # Centro x do disco
