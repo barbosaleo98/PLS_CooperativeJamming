@@ -18,10 +18,10 @@ Produz os nós veiculares e planares inspirada na rede C-V2X apresentada por Wan
 
 ![Uma realização de Spatial_Sim.py](https://user-images.githubusercontent.com/64433982/156959919-e9ec95fc-763e-4a57-8383-7b7ef9d1ae97.png)
 
-[Símbolos do modelo simulado](https://user-images.githubusercontent.com/64433982/156960143-24c94a4f-4cc4-4927-a0e7-cba612d0a79d.png)
+![Símbolos do modelo simulado](https://user-images.githubusercontent.com/64433982/156960143-24c94a4f-4cc4-4927-a0e7-cba612d0a79d.png)
 
 * As ruas são geradas por um Processo Linear de Poisson (PLP) baseado no Modelo 2 do Paradoxo de Bertrand.
 
 * Os nós planares (pedestres e infraestruturas) são gerados por Processos Pontuais de Poisson (PPPs) em que a quantidade de pontos é uma distribuição de Poisson parametrizada pela medida de Lebesgue (neste caso a área do círculo) vezes a intensidade desejada para cada tipo de nó. A posição de cada ponto é determinado por distribuições uniformes de suas coordenadas polares.
 
-* Os nós veiculares são obtidos por Processos Lineares Cox Poisson (PLCPs) em que cada rua obtida pelo PLP é então populada com um PPP 1-D ao longo de seu comprimento. !
+* Os nós veiculares são obtidos por Processos Lineares Cox Poisson (PLCPs) em que cada rua obtida pelo PLP é então populada com um PPP 1-D ao longo de seu comprimento. 
