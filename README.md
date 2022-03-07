@@ -10,11 +10,18 @@ Produz uma representação gráfica do Modelo 2 do Paradoxo de Bertrand para ger
 
 ![Uma realização de Bertrand_Model2.py](https://user-images.githubusercontent.com/64433982/156959802-e9ad59b5-8cc7-4ad9-9eca-cd33db863e86.png)
 
-Nela, um midpoint (ponto vermelho) é gerado com ângulo $\theta$ e um raio $P$ obtidos por distribuições uniformes independentes. A reta é então gerada ao traçar um segmento perpendicular à P e que cruza o midpoint, terminando quando ele atinge as extremidades da área circular. Os pontos finais (X1,Y1) e (X2,Y2) são calculados por trigonometria simples dado que a distância entre cada um deles e o midpoint é dada por Q.   
+*Realização do script*
+
+Nela, um midpoint (ponto vermelho) é gerado com ângulo &theta; e um raio P obtidos por distribuições uniformes independentes. A reta é então gerada ao traçar um segmento perpendicular à P e que cruza o midpoint, terminando quando ele atinge as extremidades da área circular. Os pontos finais (X1,Y1) e (X2,Y2) são calculados por trigonometria simples dado que a distância entre cada um deles e o midpoint é dada por Q.   
+
+![Mesma realização de Bertrand_Model2.py com anotações trigonométrica](https://user-images.githubusercontent.com/64433982/156960904-25f2732b-8845-4f99-a691-b95e1508e740.png)
+
+*Mesma realização do script, mas com as medidas trigonométricas mencionadas acima*
 
 ### Spatial_Sim.py
 
 Produz os nós veiculares e planares inspirada na rede C-V2X apresentada por Wang et. al em https://doi.org/10.48550/arXiv.2009.14500. 
+
 
 ![Uma realização de Spatial_Sim.py](https://user-images.githubusercontent.com/64433982/156959919-e9ec95fc-763e-4a57-8383-7b7ef9d1ae97.png)
 
