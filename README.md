@@ -22,9 +22,9 @@ Nela, um midpoint (ponto vermelho) é gerado com ângulo &theta; e um raio P obt
 
 Produz os nós veiculares e planares inspirada na rede C-V2X apresentada no artigo "Physical Layer Security Enhancement Using Artificial Noise in Cellular Vehicle-to-Everything (C-V2X) Networks" de Wang et. al, disponível em: https://doi.org/10.48550/arXiv.2009.14500. 
 
-![Uma realização de Spatial_Sim.py](https://user-images.githubusercontent.com/64433982/156959919-e9ec95fc-763e-4a57-8383-7b7ef9d1ae97.png)
+![Uma realização de Spatial_Sim.py](https://user-images.githubusercontent.com/64433982/167932432-1ddd74de-7c9a-402a-a684-0d6dfce78366.png)
 
-![Símbolos do modelo simulado](https://user-images.githubusercontent.com/64433982/156960143-24c94a4f-4cc4-4927-a0e7-cba612d0a79d.png)
+<img src="https://user-images.githubusercontent.com/64433982/167931972-496e9e0e-4582-4b7a-9492-56bef98b18f1.png" alt="Símbolos do modelo simulado" width="600"/>
 
 A quantia de cada elementos é obtida por uma distribuição de Poisson, cujo parâmetro é dado pelo produto da medida de Lebesgue (que em espaços euclidianos de n=[1,2,3] corresponde ao comprimento, área e volume, respectivamente) vezes a intensidade do processo.
 
