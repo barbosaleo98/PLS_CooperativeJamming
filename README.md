@@ -8,13 +8,15 @@ Scripts em python para realizar simulações de PLS (Physical Layer Security) ut
 
 Produz uma representação gráfica do Modelo 2 do Paradoxo de Bertrand para geração de retas distribuídas uniformemente em uma área circular. Em redes V2X, é uma das técnicas para se produzir ruas em uma dada região.
 
-![Uma realização de Bertrand_Model2.py](https://user-images.githubusercontent.com/64433982/156959802-e9ad59b5-8cc7-4ad9-9eca-cd33db863e86.png)
+![Uma realização de Bertrand_Model2.py](https://user-images.githubusercontent.com/64433982/167978146-81daaeb8-d9e5-45d4-86c8-b2aaada6eecf.png)
 
 *Realização do script*
 
-Nela, um midpoint (ponto vermelho) é gerado com ângulo &theta; e um raio P obtidos por distribuições uniformes independentes. A reta é então gerada ao traçar um segmento perpendicular à P e que cruza o midpoint, terminando quando ele atinge as extremidades da área circular. Os pontos finais (X1,Y1) e (X2,Y2) são calculados por trigonometria simples dado que a distância entre cada um deles e o midpoint é dada por Q. Nota-se que estes pontos são distribuídos uniformemente ao longo do perímetro da circunferência.  
+Nela, um midpoint (ponto vermelho) é gerado com ângulo &theta; e um raio P obtidos por distribuições uniformes independentes. A reta é então gerada ao traçar um segmento perpendicular à P e que cruza o midpoint, terminando quando ele atinge as extremidades da área circular. Os pontos finais (X1,Y1) e (X2,Y2) são calculados por trigonometria simples dado que a distância entre cada um deles e o midpoint é dada por Q. Nota-se que estes pontos são distribuídos uniformemente ao longo do perímetro da circunferência de raio r. Pode-se selecionar através da variável _plot_markers_ se as medições trigonométricas (r e Q) serão impressas na figura. 
 
-<img src="https://user-images.githubusercontent.com/64433982/156960904-25f2732b-8845-4f99-a691-b95e1508e740.png" alt="Mesma realização de Bertrand_Model2.py com anotações trigonométrica" width="600"/>
+Quando _plot_markers_ = True, o resultado é:
+
+![Realização de Bertrand_Model2.py com marcadores](https://user-images.githubusercontent.com/64433982/167978057-b8d0154c-a28f-48ce-9116-57ec3090ce63.png)
 
 *Mesma realização do script, mas com as medidas trigonométricas mencionadas acima*
 
