@@ -25,7 +25,8 @@ xp = r * np.cos(t)
 yp = r * np.sin(t)
 fig, ax = plt.subplots()
 ax.plot(x0 + xp, y0 + yp, 'k--', alpha=0.7)
-ax.scatter(x0,y0, marker='x',color='k', label='Nó Alice')
+#ax.scatter(x0,y0, marker='x',color='k', label='Nó Alice')
+ax.scatter(x0,y0, marker='x',color='k', label='Alice node')
 ax.axis('equal')
 
 
@@ -48,8 +49,10 @@ x_planar_alices, y_planar_alices , num_planar_alices = planarNodes(lambda_alices
 x_planar_eves, y_planar_eves, num_eves = planarNodes(lambda_eves, r)
  
 #Plotta os nós planares
-ax.scatter(x_planar_alices, y_planar_alices, marker='o', edgecolor='g', facecolor='none', label='Charlies Planares')
-ax.scatter(x_planar_eves, y_planar_eves, marker='o', edgecolor='r', facecolor='none', label='Eves Planares')
+#ax.scatter(x_planar_alices, y_planar_alices, marker='o', edgecolor='g', facecolor='none', label='Charlies Planares')
+#ax.scatter(x_planar_eves, y_planar_eves, marker='o', edgecolor='r', facecolor='none', label='Eves Planares')
+ax.scatter(x_planar_alices, y_planar_alices, marker='o', edgecolor='g', facecolor='none', label='Planar Charlies')
+ax.scatter(x_planar_eves, y_planar_eves, marker='o', edgecolor='r', facecolor='none', label='Planar Eves')
 
 ### PROCESSO LINEAR DE POISSON (PLP) - RUAS DA REDE ###
 
@@ -112,10 +115,15 @@ x_vehicular_alices, y_vehicular_alices = vehicularNodes(mu_alices,p,q,sin_theta_
 x_vehicular_eves, y_vehicular_eves = vehicularNodes(mu_eves,p,q,sin_theta_PLP,cos_theta_PLP,x0,y0)
 
 # plota os nós veiculares
-ax.scatter(x_vehicular_alices, y_vehicular_alices, marker = '^', edgecolor = 'g', facecolor='none', label='Charlies Veiculares')
-ax.scatter(x_vehicular_eves, y_vehicular_eves, marker='^', edgecolor='r', facecolor='none', label='Eves Veiculares')
+#ax.scatter(x_vehicular_alices, y_vehicular_alices, marker = '^', edgecolor = 'g', facecolor='none', label='Charlies Veiculares')
+#ax.scatter(x_vehicular_eves, y_vehicular_eves, marker='^', edgecolor='r', facecolor='none', label='Eves Veiculares')
+ax.scatter(x_vehicular_alices, y_vehicular_alices, marker = '^', edgecolor = 'g', facecolor='none', label='Vehicular Charlies')
+ax.scatter(x_vehicular_eves, y_vehicular_eves, marker='^', edgecolor='r', facecolor='none', label='Vehicular Eves')
 
-ax.legend(bbox_to_anchor=(0.52,-0.03), loc="lower center", bbox_transform=fig.transFigure, ncol=3, borderpad=0.6)
-plt.title('Rede V2X para simulações de PLS')
+#ax.legend(bbox_to_anchor=(0.52,0), loc="lower center", bbox_transform=fig.transFigure, ncol=1, borderpad=0.6)
+ax.legend(ncol=1, loc="upper left", fontsize=7)
+#plt.title('Rede V2X modelada para simulações de PLS')
+plt.title('V2X Network modeled for PLS simulations')
 plt.tight_layout()
+
 plt.show()
