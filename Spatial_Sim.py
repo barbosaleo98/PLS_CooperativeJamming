@@ -123,7 +123,10 @@ ax.scatter(x_vehicular_eves, y_vehicular_eves, marker='^', edgecolor='r', faceco
 #ax.legend(bbox_to_anchor=(0.52,0), loc="lower center", bbox_transform=fig.transFigure, ncol=1, borderpad=0.6)
 ax.legend(ncol=1, loc="upper left", fontsize=7)
 #plt.title('Rede V2X modelada para simulações de PLS')
-plt.title('V2X Network modeled for PLS simulations')
+#plt.title('V2X Network modeled for PLS simulations')
+plt.xticks(fontsize=8)
+plt.yticks(fontsize=8)
+plt.rcParams['figure.dpi'] = 300
 plt.tight_layout()
-
+plt.savefig('Spatial_sim_2.svg')
 plt.show()
